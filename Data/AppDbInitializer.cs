@@ -3,6 +3,7 @@ using System.Reflection;
 using System.Threading;
 using Microsoft.AspNetCore.Builder;
 using my_books.Data.Models;
+using my_books.Data.ViewModels;
 
 namespace my_books.Data
 {
@@ -23,9 +24,10 @@ namespace my_books.Data
                         DateRead= DateTime.Now.AddDays(-10),
                         Rate=4,
                         Genre="Bio",
-                        Author="First Author",
+                        
                         CoverUrl="https...",
-                        DateAdded=DateTime.Now
+                        DateAdded=DateTime.Now,
+                        PublisherID=1,
 
                     },
                     new Book()
@@ -35,9 +37,10 @@ namespace my_books.Data
                         IsRead = false,             
                        
                         Genre = "Bio",
-                        Author = "First Author",
+                        
                         CoverUrl = "https...",
-                        DateAdded = DateTime.Now
+                        DateAdded = DateTime.Now,
+                        PublisherID = 2,
                     });
                     context.SaveChanges();
                  } 

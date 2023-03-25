@@ -7,4 +7,6 @@
         //Navigation Properties
         public List<Book> Books { get; set; }
     }
+
+    
 }
